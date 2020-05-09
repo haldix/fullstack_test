@@ -1,0 +1,69 @@
+body {
+  font-family: 'Arial';
+  background: cornflowerblue;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto 20px auto;
+}
+
+.sect-list .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sect-list .duplicate-warn {
+  background-color: #f00;
+  color: #fff;
+  padding: 20px;
+}
+
+input {
+  padding: 3px;
+  display: block;
+  width: 100%;
+  margin: 3px 0 7px 0;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  transform: scale(1.4);
+}
+
+button,
+a {
+  border: none;
+  background-color: yellow;
+  padding: 3px 5px;
+  margin-top: 12px;
+}
+
+a:hover,
+a:active,
+a:focus,
+button:hover,
+button:focus,
+button:active {
+  border: solid 2px blue;
+}

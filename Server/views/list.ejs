@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Name Added</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="sect-list">
+      <div class="container">
+        <h1>Names in DB</h1>
+        <% if(duplicate) { %>
+        <div class="duplicate-warn">
+          <h2>Name Already Exists in Database</h2>
+          <h3>Please re-enter your information</h3>
+        </div>
+        <% } %>
+        <h2><%= title %></h2>
+        <ul>
+          <% for (let name of names) { %>
+          <li><%= name %></li>
+          <% } %>
+        </ul>
+        <div class="links">
+          <a href="/form" class="add-more-link">Add More Data</a>
+          <a href="/clear" class="add-more-link">Clear All Names</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
