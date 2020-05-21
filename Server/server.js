@@ -1,9 +1,10 @@
 const express = require('express');
 const ejs = require('ejs');
 const cors = require('cors');
+
 const app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
